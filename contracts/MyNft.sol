@@ -11,7 +11,7 @@ contract MyNft is ERC721URIStorage {
 
     constructor() ERC721("MyNft", "MFT") {}
 
-    function mint(address, string memory tokenURI)
+    function mint(string memory tokenURI)
         public
         returns (uint256)
     {
