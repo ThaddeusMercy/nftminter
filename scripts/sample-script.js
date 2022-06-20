@@ -20,6 +20,9 @@ async function main() {
   await nft.deployed();
 
   console.log("NFT address:", nft.address);
+  await nft.mint("ipfs://bafyreifb66oh47ihkvdernd5l2opda3zxxk3zih4gjm7lxdbqdarityyca/metadata.json");
+  await nft.mint("ipfs://bafyreiee5yyxubdyv6wqqbwjukkaqa6qgd4bt7uypfeo4n362kjmvfehsy/metadata.json");
+  await nft.mint("ipfs://bafyreihgybogg7rxf6xvbp6dl3gqotzzibjumwlsej76a5cymsyykjnj44/metadata.json");
 }
 
 // We recommend this pattern to be able to use async/await everywhere
