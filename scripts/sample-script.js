@@ -27,6 +27,7 @@ async function main() {
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
+// 0xB19363416deaf6174c9DFDe7679daB3769d31E71 contract address
 main()
   .then(() => process.exit(0))
   .catch((error) => {

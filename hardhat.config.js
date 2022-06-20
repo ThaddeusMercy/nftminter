@@ -1,3 +1,4 @@
+require("@nomiclabs/hardhat-etherscan");
 var secret = require("./secret.json");
 require("@nomiclabs/hardhat-waffle");
 
@@ -18,6 +19,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
  module.exports = {
+  etherscan: {
+    apiKey: secret.POLYGONSCAN_API_KEY
+  },
   defaultNetwork: "mumbai",
   networks: {
     hardhat: {
