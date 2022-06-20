@@ -10,11 +10,11 @@ const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGY3
 async function main() {
   const storage = new NFTStorage({ endpoint, token })
   const metadata = await storage.store({
-    name: 'Any name',
+    name: 'oshodi',
     description:
-      'Beautiful clouds with tall trees standing in between',
-    image: new File([await fs.promises.readFile('trees.jpg')], 'trees.jpg', {
-      type: 'image/jpg',
+      'Popular oshodi market',
+    image: new File([await fs.promises.readFile('oshodi.jpeg')], 'oshodi.jpeg', {
+      type: 'image/jpeg',
     }),
   })
   console.log('IPFS URL for the metadata:', metadata.url);

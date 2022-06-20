@@ -1,4 +1,4 @@
-// contracts/GameItem.sol
+// contracts/MyNft.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -20,6 +20,9 @@ contract MyNft is ERC721URIStorage {
         _setTokenURI(newItemId, tokenURI);
 
         _tokenIds.increment();
+        await NFT.mint("ipfs://bafyreifb66oh47ihkvdernd5l2opda3zxxk3zih4gjm7lxdbqdarityyca/metadata.json");
+        await NFT.mint("ipfs://bafyreiee5yyxubdyv6wqqbwjukkaqa6qgd4bt7uypfeo4n362kjmvfehsy/metadata.json");
+        await NFT.mint("ipfs://bafyreihgybogg7rxf6xvbp6dl3gqotzzibjumwlsej76a5cymsyykjnj44/metadata.json");
         return newItemId;
     }
 }
